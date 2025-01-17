@@ -75,3 +75,8 @@ button, select {
 button {
     padding-inline: 20px;
 }
+@media only screen and (max-width: 678px) {
+    main {
+        width: 100%;
+    }
+}
