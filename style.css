@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    background: #eee;
+}
+h1 {
+    text-align: center;
+}
+h4 {
+    position: absolute;
+    top: 2.25rem;
+}
+main {
+    display: grid;
+    place-items: center;
+    width: 80%;
+    background: #f69e88;
+    border: 4px solid #955e6f;
+    position: relative;
+}
+::cue {
+    font-size: clamp(1.35rem, 0.8305rem + 1.2261vw, 1.75rem);
+    color: #f69e88;
+    background: #242424;
+    text-align: center;
+}
+video {
+    aspect-ratio: 16/9;
+    width: 80%;
+    max-width: 800px;
+    border: 10px inset #f69e88;
+}
+.seekbarContainer {
+    display: flex;
+    width: 80%;
+    margin-block: .5rem;
+
+    input[type="range"] {
+        accent-color: #955e6f;
+        margin-inline: 1rem;
+        width: 100%;
+    }
+    #timeDisplay {
+        font-weight: bold;
+    }
+}
+.controls {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+button, select {
+    font-weight: bold;
+    border: none;
+    background: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 2rem;
+
+    &:hover {
+        background: #242424;
+        color: #f69e88;
+    }
+    &:active {
+        scale: .8;
+    }
+}
+button {
+    padding-inline: 20px;
+}

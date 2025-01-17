@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Subtitles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <h1>I Have a Crush at Work</h1>
+        <h4>Kono Kaisha ni Suki na Hito ga Imasu</h4>
+        <video id="videoPlayer">
+            <source src="kono-kaisha.mp4" type="video/mp4">
+            <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English" default>Your Browser does not support the video tag.
+        </video>
+
+        <section class="seekbarContainer">
+            <div id="currentTimeDisplay">0:00</div>
+            <input type="range" id="seekBar" value="0" min="0" max="100" step="0.1">
+            <div id="durationTimeDisplay">0:00</div>
+        </section>
+        <section class="controls">
+            <button id="playPauseBtn">Play</button>
+            <button id="muteBtn">Mute</button>
+            <button id="fullscreenBtn">Fullscreen</button>
+            <button id="pipBtn">Picture in Picture</button>
+
+            <select name="" id="speedControl">
+                <option value="0.25">0.25x</option>
+                <option value="0.5">0.5x</option>
+                <option value="0.75">0.75x</option>
+                <option value="1" selected>1x</option>
+                <option value="1.25">1.25x</option>
+                <option value="1.5">1.5x</option>
+                <option value="1.75">1.75x</option>
+                <option value="2">2x</option>
+            </select>
+
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
